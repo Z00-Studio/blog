@@ -1,4 +1,4 @@
-從 2025 年中，我就開始大量使用 AI 工具輔助我編寫程式。而後的過去一年間，AI 輔助工具推陳出新，現在，我的工作流程裡面已經涵蓋大量自動化。在思考的時間逐步擴張的同時，我也開始萌生做 Side Project 的念頭。過去，執行一個 Side Project 對我來說是一件自由時間使用上 CP 值相對很低的選擇，但在最近，我開始有了不同的想法。
+從 2025 年中，我就開始大量使用 AI 工具輔助我編寫程式。而後的過去一年間，AI 輔助工具推陳出新。現在，我的工作流程裡面已經涵蓋大量自動化。在思考的時間逐步擴張的同時，我也開始萌生做 Side Project 的念頭。過去，執行一個 Side Project 對我來說是一件自由時間使用上 CP 值相對很低的選擇，但在最近，我開始有了不同的想法。
 
 ## 構想
 
@@ -33,6 +33,6 @@
 
 我打算不規律的在這裡將我的想法公開。可能會包含一些公司運作的內容或是對 AI 工具使用的覺察。希望我能養成保持寫作的習慣。
 
-![Z00 Studio 的第一個遊戲 Demo SkeeterShot](img/skeetershot-demo.png)
+![Z00 Studio 的第一個遊戲 Demo SkeeterShot。](img/skeetershot-demo.png)
 
-![開了一個 GitHub Issue 抱怨這遊戲多麼簡陋之後，十分鐘內就看到的進步](img/skeetershot-improved.png)
+![開了一個 GitHub Issue 抱怨這遊戲多麼簡陋之後，十分鐘內就看到的進步。](img/skeetershot-improved.png)

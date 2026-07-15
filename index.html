@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Z00 Studio Blog</title>
+<meta name="description" content="Z00 Studio's company log. 中文原文在左，英文翻譯在右。">
+<link rel="icon" type="image/png" href="assets/brand/z00-studio-icon-144.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <a id="site-title" href="#/">
+    <img src="assets/brand/z00-studio-icon-144.png" alt="Z00 Studio" id="site-icon">
+    <span class="t1">Z00 STUDIO BLOG<span id="cursor">▮</span></span>
+  </a>
+  <div id="sky"><img id="flying-owl" src="assets/avatars/transparent/owl.png" alt=""></div>
+</header>
+
+<div id="progress"><div id="progress-fill"></div></div>
+
+<div id="layout">
+  <!-- The date wheel: newest on top, oldest at the bottom. -->
+  <aside id="wheel-rail" aria-label="post timeline">
+    <div id="wheel"></div>
+  </aside>
+
+  <main id="content">
+    <article id="post">
+      <div id="post-head" hidden>
+        <div id="post-date" class="pixel-chip"></div>
+        <h1 id="post-title-zh"></h1>
+        <p id="post-title-en"></p>
+      </div>
+      <div id="post-grid"></div>
+    </article>
+    <div id="loading" hidden><span class="pix-spin"></span> LOADING…</div>
+    <div id="error" hidden></div>
+  </main>
+</div>
+
+<footer id="zoo-footer">
+  <div id="zoo-strip"></div>
+  <div id="zoo-ground"></div>
+  <p id="colophon">© Z00 STUDIO — written by 🦁, translated by Claude, kept by the Z00.</p>
+</footer>
+
+<div id="tooltip" hidden></div>
+
+<script src="assets/js/marked.min.js"></script>
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

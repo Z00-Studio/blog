@@ -56,7 +56,8 @@ code fence, table, standalone image line, or `---`.
   tables, and dividers that need no translation: keep them *exactly*
   identical in both files.
 - **Aim for a 1:1 sentence mapping inside each block.** Sentences end at
-  `。！？；…` (Chinese) and `. ! ?` (English). Hover highlights counterparts
+  `。！？；` (Chinese) and `. ! ?` (English); the ellipsis `…` does NOT end a
+  sentence. Hover highlights counterparts
   by index, so translate sentence-for-sentence: three Chinese sentences →
   three English sentences. If English truly demands a split/merge, the block
   falls back to whole-paragraph hover (validator warns).

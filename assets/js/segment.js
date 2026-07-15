@@ -3,13 +3,15 @@
    the page highlights.
 
    A sentence ends at:
-     - CJK terminators 。！？；… (plus any closing quotes/brackets), or
+     - CJK terminators 。！？； (plus any closing quotes/brackets), or
      - Latin  terminators . ! ?  (plus closing quotes/brackets) when followed
        by whitespace or end-of-text — so "3.5" or "v1.0" never splits.
+   The ellipsis … is NOT a terminator: Chinese prose uses it mid-sentence
+   ("…等"), so treating it as an end would split sentences that aren't over.
 */
 
 export const TERMINATOR =
-  /[。！？；…]+[」』”’）)\]]*|[.!?]+["'”’）)\]]*(?=\s|$)/;
+  /[。！？；]+[」』”’）)\]]*|[.!?]+["'”’）)\]]*(?=\s|$)/;
 
 /** Split text into pieces; `end: true` marks a piece that closes a sentence. */
 export function splitPieces(text) {

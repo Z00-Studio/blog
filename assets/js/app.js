@@ -289,7 +289,7 @@ function initProgressBar() {
 
 const ZOO = [
   'orca', 'owl', 'meerkat', 'dolphin', 'tortoise',
-  'leopard', 'woodpecker', 'elephant', 'magpie',
+  'leopard', 'woodpecker', 'elephant', 'magpie', 'axolotl',
 ];
 
 /* The animals wander freely across the footer strip: each has its own pace

@@ -114,6 +114,29 @@ for (const p of index.posts) {
   });
 }
 
+/* ------------------------------------------------------ footer zoo assets */
+
+// Every animal registered in the footer zoo (the `ZOO` array in assets/js/app.js)
+// roams the strip as assets/avatars/transparent/<name>.png, and its solid tile
+// lives at assets/avatars/<name>.png. A registered animal with a missing or
+// misnamed PNG 404s silently in the strip, so assert both files exist for each.
+// No shared script produces the transparent set (it is hand-keyed per README),
+// which is exactly why this presence check is worth enforcing in CI.
+console.log('checking footer zoo avatars');
+const appJs = readFileSync(join(root, 'assets', 'js', 'app.js'), 'utf8');
+const zooMatch = /const ZOO = \[([\s\S]*?)\]/.exec(appJs);
+if (!zooMatch) {
+  err('assets/js/app.js — could not find the ZOO array');
+} else {
+  const zoo = [...zooMatch[1].matchAll(/'([^']+)'/g)].map((m) => m[1]);
+  if (zoo.length === 0) err('assets/js/app.js — ZOO array is empty');
+  for (const name of zoo) {
+    for (const rel of [`assets/avatars/${name}.png`, `assets/avatars/transparent/${name}.png`]) {
+      if (!existsSync(join(root, rel))) err(`ZOO animal "${name}" — missing ${rel}`);
+    }
+  }
+}
+
 /* ----------------------------------------------------------------- done */
 
 console.log(`\n${errors} error(s), ${warnings} warning(s)`);
